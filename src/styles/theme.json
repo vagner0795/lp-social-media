@@ -5,8 +5,12 @@
       "whiteOpacity70":"#FFFFFF70",
       "dark": "#101645",
       "blue":"#00DBFF",
-      "muted":"#95AFC0"
+      "darkBlue":"#0061FF",
+      "muted":"#95AFC0",
+      "gradienteBlue":"179.55deg, rgba(16, 22, 69, 0.8) 0.39%, rgba(0, 219, 255, 0.8) 269.69%;",
+      "gradienteWhite":"180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 36.36%);"
 
 
     }
   }
+
