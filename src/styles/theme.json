@@ -3,6 +3,8 @@
       "black":"#000000",
       "white":"#FFFFFF",
       "whiteOpacity70":"#FFFFFF70",
+      "whiteOpacity50":"#F5f5f550",
+      "whiteOpacity05":"#D9D9D90D",
       "dark": "#101645",
       "blue":"#00DBFF",
       "darkBlue":"#0061FF",

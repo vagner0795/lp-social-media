@@ -110,12 +110,80 @@ export const SectionServices = styled.div`
 export const TitleServices = styled.h2`
   z-index: 2;
   background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0));
-
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-size: 50px;
   line-height: 60.95px;
+  margin-bottom: 100px;
 `;
 
-export const ContainerIcons = styled.div``;
+export const ContainerIcons = styled.div`
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+`;
+
+export const RadiusBg = styled.div`
+  background-color: ${colors.whiteOpacity70};
+  width: 263px;
+  height: 267px;
+  border: 1px solid ${colors.white};
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+`;
+
+export const TextAbout = styled.p`
+  margin-top: 150px;
+  width: 520px;
+  height: 188px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30.48px;
+  color: ${colors.white};
+`;
+
+export const AboutImage = styled.img`
+  width: ${(props) => (props.width ? "" : "100px")};
+  height: ${(props) => (props.height ? "" : "100px")};
+`;
+
+// SECTION STEPS
+
+export const SectionSteps = styled.div`
+  z-index: 2;
+  height: 552px;
+  width: 100%;
+  background: linear-gradient(103.83deg, #101645 24.45%, #00dbff 200.53%);
+  padding: 50px;
+`;
+
+export const TitleSteps = styled.h2`
+  font-size: 50px;
+  line-height: 60.95px;
+  color: transparent;
+  background: linear-gradient(270deg, #ffffff 29.94%, #00dbff 102.1%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: 100px;
+`;
+
+export const ContainerSteps = styled.div``;
+export const BoxBg = styled.div`
+  width: 333px;
+  height: 223px;
+  border: 1px solid ${colors.whiteOpacity50};
+  background-color: ${colors.whiteOpacity05};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TextSteps = styled.p``;
