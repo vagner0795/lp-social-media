@@ -18,6 +18,13 @@ import {
   TitleSteps,
   BoxBg,
   TextSteps,
+  SectionFaq,
+  ContainerFaq,
+  AcordeonFaq,
+  ContainerImageFaq,
+  SectionForm,
+  ContainerTitleForm,
+  ContainerForm,
 } from "./styles";
 import { Header } from "../../components/Header";
 import Button from "../../components/Button";
@@ -28,6 +35,9 @@ import PeopleIcon from "../../assets/about-image2.png";
 import ArrowIcon from "../../assets/about-image3.png";
 import DesktopIcon from "../../assets/about-image4.png";
 import ArrowStepImg from "../../assets/doble-arrow.png";
+import FaqImg01 from "../../assets/faq-image1.png";
+import FaqImg02 from "../../assets/faq-image2.png";
+import FormIcon from "../../assets/arrow-form.png";
 
 const Home = () => {
   return (
@@ -132,9 +142,55 @@ const Home = () => {
             <BoxBg>
               <TextSteps>Dashboard em tempo real</TextSteps>
             </BoxBg>
-            <img src={ArrowStepImg} alt="" />
+            <img src={ArrowStepImg} alt="icon arrow" />
+            <BoxBg>
+              <TextSteps>Agendamento de posts</TextSteps>
+            </BoxBg>
+            <img src={ArrowStepImg} alt="icon arrow" />
+            <BoxBg>
+              <TextSteps>Monitoramento de redes sociais</TextSteps>
+            </BoxBg>
+            <img src={ArrowStepImg} alt="icon arrow" />
+            <BoxBg>
+              <TextSteps>Monitoramento de redes sociais</TextSteps>
+            </BoxBg>
           </ContainerSteps>
         </SectionSteps>
+        <SectionFaq>
+          <h2>
+            PERGUNTAS FREQUENTES SOBRE O SERVIÇOS DE <span>SOCIAL MEDIA</span>
+          </h2>
+          <ContainerFaq>
+            <AcordeonFaq>
+              <h1 style={{ textAlign: "center" }}>FAQ</h1>
+            </AcordeonFaq>
+            <ContainerImageFaq>
+              <img src={FaqImg01} alt="FAQ image 01" />
+              <img src={FaqImg02} alt="FAQ image 02" />
+            </ContainerImageFaq>
+          </ContainerFaq>
+        </SectionFaq>
+        <SectionForm>
+          <ContainerTitleForm>
+            <h2>
+              Solicitar contato para serviço de <span>Social Media</span>
+            </h2>
+            <hr />
+            <p>Para solicitar contato, preencha o formulário ao lado</p>
+            <div>
+              <img src={FormIcon} alt="Form Icon" />
+            </div>
+          </ContainerTitleForm>
+          <ContainerForm>
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <Button background="yellow" width="250px" height="70px">
+              Enviar
+            </Button>
+          </ContainerForm>
+        </SectionForm>
       </Body>
     </>
   );

@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { colors } from "../../styles/theme.json";
 import RocketImage from "../../assets/rocket-bg.png";
 
-//Body Styles
+// BODY CONFIG
 export const Body = styled.div`
   width: 100%;
   height: 100%;
@@ -14,19 +14,21 @@ export const Body = styled.div`
   background: linear-gradient(180deg, #101645 6.67%, #00dbff 144.48%);
 `;
 
-//Container Main Styles
+// CONTAINER MAIN CONFIG MAX WIDTH 1300PX
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  max-width: 1300px;
+  /* max-width: 1300px; */
 `;
 
-//Home Styles
+// HOME SECTION CONFIG
 export const SectionHome = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px;
+  background: linear-gradient(180deg, #101645 6.67%, #00dbff 144.48%);
+  width: 100vw;
 
   img {
     width: 1018px;
@@ -64,7 +66,7 @@ export const Text = styled.p`
   color: ${colors.whiteOpacity70};
 `;
 
-//Services Styles
+// SERVICES SECTION CONFIG
 export const SectionServices = styled.div`
   background-image: url(${RocketImage});
   background-position: top;
@@ -72,7 +74,7 @@ export const SectionServices = styled.div`
 
   position: relative;
   height: 2118px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -154,7 +156,7 @@ export const AboutImage = styled.img`
   height: ${(props) => (props.height ? "" : "100px")};
 `;
 
-// SECTION STEPS
+// SECTION STEPS CONFIG
 
 export const SectionSteps = styled.div`
   z-index: 2;
@@ -175,7 +177,17 @@ export const TitleSteps = styled.h2`
   margin-bottom: 100px;
 `;
 
-export const ContainerSteps = styled.div``;
+export const ContainerSteps = styled.div`
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 97px;
+    height: 97px;
+  }
+`;
 export const BoxBg = styled.div`
   width: 333px;
   height: 223px;
@@ -186,4 +198,137 @@ export const BoxBg = styled.div`
   align-items: center;
 `;
 
-export const TextSteps = styled.p``;
+export const TextSteps = styled.p`
+  font-size: 30px;
+  line-height: 36.57px;
+  font-weight: bold;
+  text-align: center;
+`;
+
+// FAQ SECTION CONFIG
+
+export const SectionFaq = styled.div`
+  width: 100%;
+  height: 1458px;
+  background-color: ${colors.dark};
+  padding: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+    color: ${colors.white};
+    font-size: 50px;
+    line-height: 60.95px;
+    font-weight: 700;
+    width: 1476px;
+  }
+
+  span {
+    background: linear-gradient(180deg, #00dbff 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    line-height: 60.95px;
+    font-weight: 700;
+  }
+`;
+
+export const ContainerFaq = styled.div`
+  background-color: red;
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  gap: 20px;
+`;
+export const AcordeonFaq = styled.div`
+  background-color: blue;
+  width: 60%;
+`;
+
+export const ContainerImageFaq = styled.div`
+  width: 688px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+`;
+
+// FORM CONFIG
+
+export const SectionForm = styled.div`
+  width: 100%;
+  height: 1009px;
+  background: linear-gradient(120.38deg, #0c1138 12.82%, #00dbff 191.47%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+`;
+export const ContainerTitleForm = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  hr {
+    margin: 30px 0;
+    width: 100%;
+    height: 1px;
+    border-color: ${colors.whiteOpacity50};
+  }
+
+  h2 {
+    text-align: center;
+    color: ${colors.white};
+    font-size: 50px;
+    line-height: 60.95px;
+    font-weight: 700;
+    width: 1476px;
+    width: 700px;
+    height: 118px;
+  }
+
+  span {
+    color: ${colors.blue};
+    font-size: 50px;
+    line-height: 60.95px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  div {
+    margin-left: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  img {
+    width: 57px;
+    height: 57px;
+  }
+`;
+
+export const ContainerForm = styled.div`
+  width: 400px;
+  height: 600px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+//! https://react-hook-form.com/get-started#SchemaValidation
+
+//! Instalar react-hook-form e yup resolve

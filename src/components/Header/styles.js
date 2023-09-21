@@ -6,7 +6,7 @@ export const Container = styled.header`
   height: 99px;
   padding: 36px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: ${colors.dark};
 `;
