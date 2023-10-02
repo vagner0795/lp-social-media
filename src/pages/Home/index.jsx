@@ -24,7 +24,6 @@ import {
   ContainerImageFaq,
   SectionForm,
   ContainerTitleForm,
-  ContainerForm,
 } from "./styles";
 import { Header } from "../../components/Header";
 import Button from "../../components/Button";
@@ -38,6 +37,9 @@ import ArrowStepImg from "../../assets/doble-arrow.png";
 import FaqImg01 from "../../assets/faq-image1.png";
 import FaqImg02 from "../../assets/faq-image2.png";
 import FormIcon from "../../assets/arrow-form.png";
+
+import Faq from "../../components/Faq";
+import Form from "../../components/Form";
 
 const Home = () => {
   return (
@@ -162,7 +164,7 @@ const Home = () => {
           </h2>
           <ContainerFaq>
             <AcordeonFaq>
-              <h1 style={{ textAlign: "center" }}>FAQ</h1>
+              <Faq />
             </AcordeonFaq>
             <ContainerImageFaq>
               <img src={FaqImg01} alt="FAQ image 01" />
@@ -181,15 +183,7 @@ const Home = () => {
               <img src={FormIcon} alt="Form Icon" />
             </div>
           </ContainerTitleForm>
-          <ContainerForm>
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <Button background="yellow" width="250px" height="70px">
-              Enviar
-            </Button>
-          </ContainerForm>
+          <Form />
         </SectionForm>
       </Body>
     </>

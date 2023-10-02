@@ -238,14 +238,12 @@ export const SectionFaq = styled.div`
 `;
 
 export const ContainerFaq = styled.div`
-  background-color: red;
   display: flex;
   margin-top: 50px;
   width: 100%;
   gap: 20px;
 `;
 export const AcordeonFaq = styled.div`
-  background-color: blue;
   width: 60%;
 `;
 
@@ -318,17 +316,8 @@ export const ContainerTitleForm = styled.div`
   }
 `;
 
-export const ContainerForm = styled.div`
-  width: 400px;
-  height: 600px;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-`;
-
 //! https://react-hook-form.com/get-started#SchemaValidation
 
 //! Instalar react-hook-form e yup resolve
+
+//! desenvolver o accordion
