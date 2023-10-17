@@ -316,8 +316,4 @@ export const ContainerTitleForm = styled.div`
   }
 `;
 
-//! https://react-hook-form.com/get-started#SchemaValidation
-
-//! Instalar react-hook-form e yup resolve
-
-//! desenvolver o accordion
+export const ContainerForm = styled.div``;

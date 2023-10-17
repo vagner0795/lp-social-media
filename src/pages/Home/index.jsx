@@ -24,6 +24,7 @@ import {
   ContainerImageFaq,
   SectionForm,
   ContainerTitleForm,
+  ContainerForm,
 } from "./styles";
 import { Header } from "../../components/Header";
 import Button from "../../components/Button";
@@ -183,7 +184,9 @@ const Home = () => {
               <img src={FormIcon} alt="Form Icon" />
             </div>
           </ContainerTitleForm>
-          <Form />
+          <div>
+            <Form />
+          </div>
         </SectionForm>
       </Body>
     </>

@@ -1,41 +1,17 @@
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import { ContainerForm } from "./styles";
-
-const schema = yup
-  .object({
-    name: yup.string().required("Nome é obrigatório"),
-    email: yup.string().email().required("Email é obrigatório"),
-    phone: yup.number().required("Whatsapp é obrigatório"),
-  })
-  .required();
+import React from "react";
 
 function Form() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
-    resolver: yupResolver(schema),
-  });
-  const onSubmit = (data) => console.log(data);
-
   return (
-    <ContainerForm>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register("name")} placeholder="Nome" />
-        <p>{errors.name?.message}</p>
-
-        <input {...register("email")} placeholder="E-mail" />
-        <p>{errors.email?.message}</p>
-
-        <input {...register("phone")} placeholder="Whatsapp" />
-        <p>{errors.phone?.message}</p>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </ContainerForm>
+    <>
+      <script>
+        {`!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1193023",hash:"e68ffaee538c77defa8cac95b687e411",locale:"pt"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");`}
+      </script>
+      <script
+        id="amoforms_script_1193023"
+        async="async"
+        src="https://forms.kommo.com/forms/assets/js/amoforms.js?1696632496"
+      ></script>
+    </>
   );
 }
 
